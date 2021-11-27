@@ -1,5 +1,5 @@
 # Definition for singly-linked list.
-from typing import List
+import numpy as np
 
 
 class ListNode:

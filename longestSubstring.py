@@ -5,7 +5,7 @@ def lengthOfLongestSubstring(s: str) -> int:
             return 0
         lstCheck = []
         for i in range(len(s)):
-            for j in range(i+1, len(s)):
+            for j in range(i+1, len(s) + 1):
                 a = set(s[i:j])
                 ret = ""
                 for x in a:
@@ -15,4 +15,4 @@ def lengthOfLongestSubstring(s: str) -> int:
                     
         return max(lstCheck)
 
-lengthOfLongestSubstring("abcabcad")
+lengthOfLongestSubstring(" ")
